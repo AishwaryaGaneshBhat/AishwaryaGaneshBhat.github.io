@@ -74,7 +74,7 @@ line {
     'Taiwan', 'Thailand', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'United Kingdom', 'United States'
 ];
 
-d3.json("./data/network_data.json").then(function (data) {
+d3.json("./network_data.json").then(function (data) {
     // Create a color scale for countries without repetition
     const colorScale = d3.scaleOrdinal(d3.schemeCategory10)
         .domain(countries);
